@@ -1,0 +1,15 @@
+<div class="flex mx-auto mb-6 py-2 px-4 rounded-4xl items-center gap-2 bg-[#f973161a] w-fit border border-[#f973164d]">
+  <span class="relative flex size-1.5">
+    <span class="animate-pulse relative inline-flex size-1.5 rounded-full bg-secondary"></span>
+  </span>
+
+  @if (badgeIcon) {
+    <span [class]="badgeIcon + ' text-secondary text-xs'"></span>
+  } @else {
+    <span class="relative flex size-2">
+      <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-secondary opacity-75"></span>
+      <span class="relative inline-flex size-2 rounded-full bg-secondary"></span>
+    </span>
+  }
+  <span class="text-secondary font-medium text-sm"> {{ badgeTitle }} </span>
+</div>

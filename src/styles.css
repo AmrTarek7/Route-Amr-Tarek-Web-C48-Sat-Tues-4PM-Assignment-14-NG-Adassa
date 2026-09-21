@@ -41,8 +41,22 @@ button {
   @apply cursor-pointer;
 }
 
+@utility gradient-text {
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(135deg, #f97316, #fbbf24);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
 @layer components {
   .btn-primary {
     @apply inline-flex items-center justify-center cursor-pointer px-8 py-4 font-semibold text-white rounded-full bg-linear-to-br from-orange-500 to-orange-600 transition-all duration-300;
+  }
+
+  .glass-card {
+    border-radius: var(--radius-3xl);
+    -webkit-backdrop-filter: blur(20px);
+    background: #161616cc;
+    border: 1px solid #262626;
   }
 }

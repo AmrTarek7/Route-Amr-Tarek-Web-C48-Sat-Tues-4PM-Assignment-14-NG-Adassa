@@ -1,0 +1,25 @@
+<div class="group bg-[#161616] rounded-2xl p-6 text-center border border-[#262626] hover:border-orange-500/30 transition-all duration-300">
+  <div class="relative inline-block mb-4">
+    <img [alt]="member.name" class="w-24 h-24 rounded-full object-cover ring-4 ring-[#262626] group-hover:ring-orange-500/30 transition-all" [src]="member.image" />
+    <div class="absolute -bottom-1 -right-1 w-6 h-6 bg-orange-500 rounded-full border-2 border-[#161616] flex items-center justify-center">
+      <span class="fa-solid fa-check text-xs"></span>
+    </div>
+  </div>
+  <h3 class="font-bold text-white text-lg">{{ member.name }}</h3>
+  <p class="text-orange-500 text-sm font-medium mb-4">{{ member.role }}</p>
+
+  <!-- Social Links -->
+  <div class="flex justify-center gap-3">
+    <a target="_blank" href="#" class="w-9 h-9 bg-[#262626] rounded-lg flex items-center justify-center text-neutral-500 hover:bg-black hover:text-white transition-all duration-300">
+      <i class="fa-brands fa-x-twitter"></i>
+    </a>
+
+    <a href="#" target="_blank" class="w-9 h-9 bg-[#262626] rounded-lg flex items-center justify-center text-neutral-500 hover:text-white hover:bg-gray-800 transition-all duration-300">
+      <span class="fa-brands fa-github"></span>
+    </a>
+
+    <a target="_blank" href="#" class="w-9 h-9 bg-[#262626] rounded-lg flex items-center justify-center text-neutral-500 hover:bg-blue-700 hover:text-white transition-all duration-300">
+      <span class="fa-brands fa-linkedin"></span>
+    </a>
+  </div>
+</div>
