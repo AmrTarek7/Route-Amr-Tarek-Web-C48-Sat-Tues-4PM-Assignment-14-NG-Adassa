@@ -1,1 +1,69 @@
-<p>privacy works!</p>
+<section class="bg-primary">
+  <app-pricacy-hero />
+
+  <!--  -->
+
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="bg-orange-500/10 border border-orange-500/20 rounded-2xl p-6 mb-12">
+      <div class="flex gap-4">
+        <div class="shrink-0">
+          <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+            ></path>
+          </svg>
+        </div>
+        <div>
+          <h3 class="font-semibold text-orange-500 mb-1">خصوصيتك تهمنا</h3>
+          <p class="text-orange-300/80 text-sm">نحن ملتزمون بحماية معلوماتك الشخصية والشفافية بشأن ما نجمعه.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Srart Content -->
+    <div class="flex flex-col gap-12">
+      <app-privacy-policy-header [id]="'intro'" [number]="1" [title]="'مقدمة'">
+        <p class="text-neutral-400 leading-relaxed">مرحباً بك في عدسة. نحن نحترم خصوصيتك وملتزمون بحماية بياناتك الشخصية. ستعلمك سياسة الخصوصية هذه بكيفية العناية ببياناتك الشخصية عند زيارة موقعنا وتخبرك عن حقوق الخصوصية الخاصة بك.</p>
+      </app-privacy-policy-header>
+
+      <app-privacy-policy-header [id]="'collectedInformation'" [number]="2" [title]="'المعلومات التي نجمعها'">
+        <app-policy-check-list [items]="collectedInformation" />
+      </app-privacy-policy-header>
+
+      <app-privacy-policy-header [id]="'informationUsage'" [number]="3" [title]="'كيف نستخدم معلوماتك'">
+        <app-policy-check-list [items]="informationUsage" />
+      </app-privacy-policy-header>
+
+      <app-privacy-policy-header [id]="'cookies'" [number]="4" [title]="'ملفات تعريف الارتباط'">
+        <p class="text-neutral-400 leading-relaxed">
+          نستخدم ملفات تعريف الارتباط وتقنيات التتبع المشابهة لتتبع النشاط على موقعنا. يمكنك توجيه متصفحك لرفض جميع ملفات تعريف الارتباط أو للإشارة عند إرسال ملف تعريف ارتباط. ومع ذلك، إذا لم تقبل ملفات تعريف الارتباط، فقد لا تتمكن من استخدام بعض
+          أجزاء موقعنا.
+        </p>
+      </app-privacy-policy-header>
+
+      <app-privacy-policy-header [id]="'dataSecurity'" [number]="5" [title]="'أمان البيانات'">
+        <p class="text-neutral-400 leading-relaxed">لقد وضعنا تدابير أمنية مناسبة لمنع فقدان بياناتك الشخصية أو استخدامها أو الوصول إليها بشكل غير مصرح به عن طريق الخطأ. نحن نحد الوصول إلى بياناتك الشخصية لأولئك الذين لديهم حاجة عملية للمعرفة.</p>
+      </app-privacy-policy-header>
+
+      <app-privacy-policy-header [id]="'usersRights'" [number]="6" [title]="'حقوقك'">
+        <app-policy-check-list [items]="userRights" />
+      </app-privacy-policy-header>
+
+      <app-privacy-policy-header [id]="'contactUs'" [number]="7" [title]="'تواصل معنا'">
+        <p class="text-neutral-400 leading-relaxed mb-4">إذا كان لديك أي أسئلة حول سياسة الخصوصية هذه، يرجى التواصل معنا:</p>
+        <a href="mailto:hello@adasah.com" class="inline-flex items-center gap-2 text-orange-500 hover:text-orange-400 font-medium">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+          </svg>
+          hello@adasah.com
+        </a>
+      </app-privacy-policy-header>
+    </div>
+    <!-- End Content  -->
+    <div class="mt-16 pt-8 border-t border-[#262626]">
+      <p class="text-neutral-500 text-sm text-center">باستخدام موقعنا، فإنك توافق على سياسة الخصوصية هذه. انظر أيضاً <a class="text-orange-500 hover:text-orange-400 font-medium" href="/terms" data-discover="true">شروط الخدمة</a>.</p>
+    </div>
+  </div>
+</section>

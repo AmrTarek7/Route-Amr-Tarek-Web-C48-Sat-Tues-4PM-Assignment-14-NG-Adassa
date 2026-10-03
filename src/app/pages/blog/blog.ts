@@ -1,17 +1,10 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { SectionBadge } from '../../shared/components/section-badge/section-badge';
 
 @Component({
   selector: 'app-blog',
-  imports: [],
+  imports: [SectionBadge],
   templateUrl: './blog.html',
   styleUrl: './blog.css',
 })
-export class Blog implements OnInit, OnDestroy {
-  ngOnInit(): void {
-    console.log('Blog Component Created');
-  }
-
-  ngOnDestroy(): void {
-    console.log('Blog Component Destroyed');
-  }
-}
+export class Blog {}
