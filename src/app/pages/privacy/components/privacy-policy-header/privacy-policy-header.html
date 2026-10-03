@@ -1,0 +1,13 @@
+<section class="group" [attr.aria-labelledby]="id">
+  <h2 [id]="id" class="text-2xl font-bold text-white mb-4 flex items-center gap-3">
+    <span class="flex items-center justify-center w-8 h-8 bg-linear-to-br from-orange-500 to-yellow-500 text-white text-sm font-bold rounded-lg">
+      {{ number }}
+    </span>
+
+    {{ title }}
+  </h2>
+
+  <div class="pr-11">
+    <ng-content />
+  </div>
+</section>

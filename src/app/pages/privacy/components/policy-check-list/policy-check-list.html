@@ -1,0 +1,14 @@
+<ul class="space-y-3">
+  @for (item of items; track item.id) {
+    <li class="flex items-start gap-3 text-neutral-400">
+      <i class="fa-solid fa-circle-check w-5 h-5 text-orange-500 shrink-0 mt-0.5 font-extrabold"></i>
+      <span>
+        @if (item.title) {
+          <strong class="text-white">{{ item.title }}</strong>
+        }
+
+        {{ item.description }}
+      </span>
+    </li>
+  }
+</ul>
