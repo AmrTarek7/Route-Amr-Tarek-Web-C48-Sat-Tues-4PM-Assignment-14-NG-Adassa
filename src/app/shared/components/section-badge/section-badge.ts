@@ -9,12 +9,4 @@ import { Component, Input, input } from '@angular/core';
 export class SectionBadge {
   @Input({ required: true }) badgeTitle!: string;
   @Input() badgeIcon!: string;
-
-  ngOnInit() {
-    console.log(this.badgeIcon, 'badgeIcon ngOnInit ');
-  }
-
-  ngOnChanges(): void {
-    console.log(this.badgeIcon, 'badgeIcon ngOnChanges ');
-  }
 }
